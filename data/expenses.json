@@ -1,0 +1,36 @@
+{
+    "user1": [
+        {
+            "name": "mouse",
+            "amount": 100,
+            "source": "bank"
+        },
+        {
+            "name": "laptop",
+            "amount": 50000.50,
+            "source": "cash"
+        },
+        {
+            "name": "mobile",
+            "amount": 15000,
+            "source": "cash"
+        }
+    ],
+    "user2": [
+        {
+            "name": "watch",
+            "amount": 5000.60,
+            "source": "paytm"
+        },
+        {
+            "name": "photo_frame",
+            "amount": 100,
+            "source": "paytm"
+        },
+        {
+            "name": "chair",
+            "amount": 3000,
+            "source": "cash"
+        }
+    ]
+}
