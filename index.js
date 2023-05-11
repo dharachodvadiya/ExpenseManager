@@ -21,12 +21,12 @@ app.get('/expenses/:_userName', (req, res)=>{
        
         if(expenses[userName] != undefined)
         {
-            res.status = 200;
-            res.send( expenses[userName]);
+           // res.statusCode  = 200;
+            res.send( 200, expenses[userName]);
             //res.sendStatus(200);
         }else{
-            res.status = 404;
-            res.send( "user not found");
+            //res.statusCode  = 404;
+            res.send(404, "user not found");
         }
     });
 
