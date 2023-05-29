@@ -1,0 +1,15 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const ExpenseSchema = new Schema({
+    exp_name: { type: String },
+    amount: { type: Number },
+    details: { type: String },
+    milisecond: { type: Number },
+    source_id: { type: Schema.Types.ObjectId, ref: 'source' }
+});
+
+
+const Expense = mongoose.model('expenses',ExpenseSchema);
+
+module.exports = Expense;

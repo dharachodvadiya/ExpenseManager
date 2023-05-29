@@ -1,0 +1,13 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+// create student schema & model
+const SourceSchema = new Schema({
+    source_name: { type: String },
+    account_id: { type: mongoose.Schema.Types.ObjectId, ref: 'account' }
+});
+
+
+const Source = mongoose.model('source',SourceSchema);
+
+module.exports = Source;
