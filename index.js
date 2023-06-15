@@ -43,19 +43,19 @@ const express = require('express');
 const routes = require('./routes/api');
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DB_CONNECTION, {
-    autoIndex: true
-});
+// mongoose.connect(process.env.DB_CONNECTION, {
+//     autoIndex: true
+// });
 
-const database = mongoose.connection
+// const database = mongoose.connection
 
-// database.on('error', (error) => {
-//     console.log(error)
+// // database.on('error', (error) => {
+// //     console.log(error)
+// // })
+
+// database.once('connected', () => {
+//     console.log('Database Connected');
 // })
-
-database.once('connected', () => {
-    console.log('Database Connected');
-})
 
 const app = express();
 const PORT = process.env.PORT;
