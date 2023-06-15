@@ -54,7 +54,7 @@ const ACCOUNT = "account";
     // })
 }
 
-router.get(`/`, (req, res, next) => {
+router.get("/", (req, res, next) => {
     res.send("Host Successfully")
 })
 
