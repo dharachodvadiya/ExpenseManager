@@ -43,9 +43,9 @@ const express = require('express');
 const routes = require('./routes/api');
 const mongoose = require('mongoose');
 
-// mongoose.connect(process.env.DB_CONNECTION, {
-//     autoIndex: true
-// });
+mongoose.connect(process.env.DB_CONNECTION, {
+    autoIndex: true
+});
 
 const database = mongoose.connection
 
