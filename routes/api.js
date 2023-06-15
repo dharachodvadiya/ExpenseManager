@@ -54,10 +54,6 @@ const ACCOUNT = "account";
     // })
 }
 
-router.get("/", (req, res, next) => {
-    res.send("Host Successfully")
-})
-
 // CURD In account collection
 {
 

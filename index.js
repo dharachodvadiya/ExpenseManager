@@ -75,6 +75,10 @@ app.use(function (error, req, res, next) {
     }
 });
 
+app.get("/", (req, res) => {
+    res.status(200).send("Hey, You are in my backend!!!");
+  });
+
 
 app.listen(PORT, () => {
     console.log(`Server Started at ${PORT}`)
