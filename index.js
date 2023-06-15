@@ -10,7 +10,7 @@
     // app.get('/expenses/:_userName', (req, res)=>{
 
     //     fs.readFile("./data/expenses.json", 'utf8', (error, data) =>
-    //     {      
+    //     {
     //         if(error){
     //             res.send(error);
     //              return;
@@ -43,19 +43,19 @@ const express = require('express');
 const routes = require('./routes/api');
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DB_CONNECTION, {
-    autoIndex: true
-});
+// mongoose.connect(process.env.DB_CONNECTION, {
+//     autoIndex: true
+// });
 
-const database = mongoose.connection
+// const database = mongoose.connection
 
-// database.on('error', (error) => {
-//     console.log(error)
+// // database.on('error', (error) => {
+// //     console.log(error)
+// // })
+
+// database.once('connected', () => {
+//     console.log('Database Connected');
 // })
-
-database.once('connected', () => {
-    console.log('Database Connected');
-})
 
 const app = express();
 const PORT = process.env.PORT;
@@ -121,13 +121,13 @@ const handleDuplicateKeyError = (err, res) => {
 
     //     //     }else{
     //     //         res[obj1[key]] = key;
-    //     //     }       
+    //     //     }
 
     //     // }
 
     //     // console.log(res);
     // //======================================
-    //     let res1 = Object.entries(obj1).reduce((prev, curr) => 
+    //     let res1 = Object.entries(obj1).reduce((prev, curr) =>
     //     {
     //         if(curr[1] in prev)
     //         {
@@ -139,7 +139,7 @@ const handleDuplicateKeyError = (err, res) => {
 
     //         }else{
     //             prev[curr[1]] = curr[0];
-    //         }    
+    //         }
 
     //         return prev;
     //     },{});
