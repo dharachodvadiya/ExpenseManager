@@ -54,6 +54,10 @@ const ACCOUNT = "account";
     // })
 }
 
+router.get("/", (req, res, next) => {
+    res.status(200).send("Hey, You are in my backend!!!");
+})
+
 // CURD In account collection
 {
 
