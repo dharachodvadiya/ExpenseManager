@@ -47,15 +47,15 @@ const mongoose = require('mongoose');
 //     autoIndex: true
 // });
 
-// const database = mongoose.connection
+const database = mongoose.connection
 
-// // database.on('error', (error) => {
-// //     console.log(error)
-// // })
-
-// database.once('connected', () => {
-//     console.log('Database Connected');
+// database.on('error', (error) => {
+//     console.log(error)
 // })
+
+database.once('connected', () => {
+    console.log('Database Connected');
+})
 
 const app = express();
 const PORT = process.env.PORT;
