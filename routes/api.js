@@ -168,7 +168,7 @@ const ACCOUNT = "account";
     })
 
     // Edit by ID Method
-    router.delete(`/${EXPENSES}/${EDIT_ONE}/:id`, (req, res, next) => {
+    router.put(`/${EXPENSES}/${EDIT_ONE}/:id`, (req, res, next) => {
 
         Expense.findByIdAndUpdate(req.params.id, new Expense(req.body))
             .then(response => res.send(response))
