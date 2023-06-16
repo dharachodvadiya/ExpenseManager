@@ -7,7 +7,7 @@ const ExpenseSchema = new Schema({
     details: { type: String },
     milisecond: { type: Number },
     source_id: { type: Schema.Types.ObjectId, ref: 'source' }
-});
+}, { versionKey: false });
 
 
 const Expense = mongoose.model('expenses',ExpenseSchema);

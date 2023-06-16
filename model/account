@@ -10,7 +10,7 @@ const AccountSchema = new Schema({
     bank_name: { 
         type: String, 
         required : true}
-});
+}, { versionKey: false });
 
 
 const Account = mongoose.model('account',AccountSchema);

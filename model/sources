@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const SourceSchema = new Schema({
     source_name: { type: String },
     account_id: { type: mongoose.Schema.Types.ObjectId, ref: 'account' }
-});
+}, { versionKey: false });
 
 
 const Source = mongoose.model('source',SourceSchema);
